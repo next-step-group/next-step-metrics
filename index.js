@@ -2,7 +2,7 @@ import nc from "next-connect";
 import fs from "fs";
 
 export const importMetrics = (req, res) => {
-  console.log("succesfully entered insideHandler");
+  // console.log("succesfully entered insideHandler");
   // console.log("req", req.body);
   const json = JSON.parse(req.body);
   const { name, value } = json;
@@ -25,7 +25,7 @@ export const importMetrics = (req, res) => {
 
 export async function reportWebVitals(metric) {
   const body = JSON.stringify(metric);
-  const url = "/api";
+  const url = "/api/NSMetrics";
 
   console.log("BODY IS", body);
   await fetch(url, { body, method: "POST", keepalive: true });
