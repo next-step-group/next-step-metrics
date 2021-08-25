@@ -25,7 +25,7 @@ export const importMetrics = (req, res) => {
 
 export async function reportWebVitals(metric) {
   const body = JSON.stringify(metric);
-  const url = "/api";
+  const url = "/api/NSMetrics";
 
   console.log("BODY IS", body);
   await fetch(url, { body, method: "POST", keepalive: true });
