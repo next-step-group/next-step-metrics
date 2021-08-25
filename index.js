@@ -2,7 +2,7 @@ import nc from "next-connect";
 import fs from "fs";
 
 export const importMetrics = (req, res) => {
-  console.log("succesfully entered insideHandler");
+  // console.log("succesfully entered insideHandler");
   // console.log("req", req.body);
   const json = JSON.parse(req.body);
   const { name, value } = json;
