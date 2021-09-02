@@ -1,8 +1,7 @@
-'use strict';
-const fs = require('fs');
+const fs = require('fs')
 
 // Handles Next.js backend metrics calls
-const importMetrics = (req, res) => {
+exports.importMetrics = (req, res) => {
   const json = JSON.parse(req.body);
   const { name , value } = json;
 
@@ -33,11 +32,10 @@ const importMetrics = (req, res) => {
 };
 
 // Sends Metrics data to /NextStepMetrics on page load
-async function reportWebVitals(metric) {
+exports.reportWebVitals = async (metric) => {
   const body = JSON.stringify(metric);
   const url = "/api/NextStepMetrics";
+
   await fetch(url, { body, method: "POST", keepalive: true });
 }
 
-
-module.exports = (importMetrics, reportWebVitals)
