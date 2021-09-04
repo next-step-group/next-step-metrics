@@ -4,7 +4,7 @@ const fs = require('fs')
 exports.metrics = (req, res) => {
   const json = JSON.parse(req.body);
   const { name , value } = json;
-  const filePath = "./node_modules/next-step-metrics/next-step-metrics.json";
+  const filePath = "next-step-metrics.json";
 
   // Generate a metrics.json file in your project's root folder to house web vitals data
   if (!fs.existsSync(filePath)) {
