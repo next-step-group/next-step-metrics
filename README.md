@@ -1,6 +1,6 @@
-#NextStep
+# NextStep
 
-##About
+## About
 NextStep provides Next.js developers the ability to understand the performance impact of any changes made to their application with real-time visualization of Web Vitals metrics. 
 
 NextStep consists of two parts: 
@@ -13,7 +13,7 @@ The NextStep button in the Visual Studio Code Status Bar activates and deactivat
 
 The NextStep npm package imports the functionality to automatically capture Web Vitals details within the IDE. 
 
-##Installation
+## Installation
 	1. Download and install the NextStep VS Code Extension from the extensions marketplace. 
 	2. Run "npm install next-step-metrics" to install the NextStep Metrics npm package.
     npm install next-step-metrics 
@@ -32,7 +32,7 @@ The NextStep npm package imports the functionality to automatically capture Web 
 
     export { reportWebVitals };
 
-##Activation and Usage
+## Activation and Usage
 The NextStep extension adds a button to the Status Bar in Visual Studio Code:
 ![status_bar](./docs/assets/images/status_bar.png)
 	• "NextStep: ON🟢" indicates that NextStep will capture any changes to the Next.js application's calculated Web Vitals metrics. More information on Google's definitions and benchmarks for Web Vitals can be found here.
@@ -42,6 +42,6 @@ Calculated web metrics and their scores are displayed as a table in the Output p
 TO DO: NEED A BETTER SCREENSHOT
 ![metrics_table](./docs/assets/images/metrics_table.png)
 
-##Additional Information
+## Additional Information
 You MUST install the Next Step Metrics npm package to be able to use this extension. The required set up steps and troubleshooting documentation can be found in the Read Me. 
 NextStep is a tool specifically built for Next.js applications. Other frameworks are not currently supported. 
