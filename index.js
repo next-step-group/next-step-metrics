@@ -36,8 +36,6 @@ exports.metrics = (req, res) => {
 exports.reportWebVitals = async (metric) => {
   const body = JSON.stringify(metric);
   const url = "/api/next-step";
-  console.log('BODY IS: ', body);
-  
   await fetch(url, { body, method: "POST", keepalive: true });
   
 }
