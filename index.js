@@ -32,11 +32,11 @@ exports.metrics = (req, res) => {
   res.status(200).json({ test: "test worked" });
 };
 
-// Sends Metrics data to /NextStepMetrics on page load
+// Sends Metrics data to /next-step-metrics on page load
 exports.reportWebVitals = async (metric) => {
   const body = JSON.stringify(metric);
   const url = "/api/next-step";
-
   await fetch(url, { body, method: "POST", keepalive: true });
+  
 }
 
