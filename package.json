@@ -1,6 +1,6 @@
 {
-  "name": "next-step-npm",
-  "version": "1.0.0",
+  "name": "next-step-metrics",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
